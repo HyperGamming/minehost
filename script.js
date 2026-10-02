@@ -22,4 +22,18 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  const authForm = document.getElementById("auth-form");
+  if (authForm) {
+    authForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const button = authForm.querySelector("button[type='submit']");
+      if (button) {
+        button.textContent = "Logging in...";
+      }
+      setTimeout(() => {
+        window.location.href = "dashboard.html";
+      }, 700);
+    });
+  }
 });

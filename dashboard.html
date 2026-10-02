@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MineHost | Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <div class="brand" aria-label="MineHost home">
+          <div class="brand-mark">M</div>
+          <span>MineHost</span>
+        </div>
+
+        <nav class="side-menu" aria-label="Dashboard navigation">
+          <a href="#" class="active">Overview</a>
+          <a href="#">Servers</a>
+          <a href="#">Modpacks</a>
+          <a href="#">Backups</a>
+          <a href="#">Billing</a>
+          <a href="#">Support</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <h1>Dashboard</h1>
+          <div class="topbar-actions">
+            <button class="btn btn-secondary">New Server</button>
+            <div class="user-pill">NoxPlayer</div>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-box">
+            <span class="label">Active servers</span>
+            <strong>3</strong>
+          </div>
+          <div class="stat-box">
+            <span class="label">CPU usage</span>
+            <strong>42%</strong>
+          </div>
+          <div class="stat-box">
+            <span class="label">RAM usage</span>
+            <strong>5.8 GB</strong>
+          </div>
+          <div class="stat-box">
+            <span class="label">Monthly spend</span>
+            <strong>₹499</strong>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <section class="panel">
+            <div class="panel-header">
+              <h3>My Servers</h3>
+              <button class="btn btn-primary">Manage</button>
+            </div>
+
+            <div class="server-list">
+              <div class="server-item">
+                <div>
+                  <strong>SkyBlock Survival</strong>
+                  <div class="server-meta">8 GB RAM • Paper 1.21</div>
+                </div>
+                <span class="status-badge">Running</span>
+                <button class="mini-btn">Open</button>
+              </div>
+
+              <div class="server-item">
+                <div>
+                  <strong>Creative Build</strong>
+                  <div class="server-meta">4 GB RAM • Vanilla</div>
+                </div>
+                <span class="status-badge">Running</span>
+                <button class="mini-btn">Open</button>
+              </div>
+
+              <div class="server-item">
+                <div>
+                  <strong>Faction PvP</strong>
+                  <div class="server-meta">8 GB RAM • Forge</div>
+                </div>
+                <span class="status-badge">Restarting</span>
+                <button class="mini-btn">Open</button>
+              </div>
+            </div>
+          </section>
+
+          <aside class="panel">
+            <div class="panel-header">
+              <h3>Recent Activity</h3>
+            </div>
+
+            <div class="activity-list">
+              <div class="activity-item">
+                <strong>Backup completed</strong>
+                <span>2 hours ago</span>
+              </div>
+
+              <div class="activity-item">
+                <strong>Modpack update installed</strong>
+                <span>Yesterday</span>
+              </div>
+
+              <div class="activity-item">
+                <strong>Server restarted</strong>
+                <span>3 days ago</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
