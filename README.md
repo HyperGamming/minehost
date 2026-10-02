@@ -1,2 +1,2 @@
 # minehost
-A Minecraft server hosting platform similar to Scalacube
+A Minecraft server hosting platform.
